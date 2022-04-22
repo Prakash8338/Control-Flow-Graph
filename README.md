@@ -1,11 +1,11 @@
-# Deriving complete Control flow graph (CFG) of processor modules:
+# Deriving complete Control flow graph (CFG) of processor modules :
 
 Here, we have to make a control flow graph for verilog code. Control flow graph is a relation between two operations
 in a program such that one operation will be executed after the other. The main goal is to make mapping of the state
 in the transition state of the verilog program by the control graph path producing a path dependency graph. 
 
 
-## Implementation:
+## Implementation :
 
 We have implemented the given task in C++ language.
 
@@ -39,7 +39,7 @@ blocks. After that, we have seperately find out control graph for each control b
 
 
 
-## Input format:
+## Input format :
 
 We are providing verilog code file in .txt file and we are reading the code line by line. 
 So to read that verilog code in text file, we have to save the input file at the same location as the .cpp file.
@@ -51,7 +51,7 @@ As testcases, we are using 3 verilog codes in .txt file:
 3) Tic_Tae_Toe_Game
 
 
-## Output format:
+## Output format :
 
 So in output, we are printing edges of control flow graph.
 We are then using graphviz to visualize the graph.
