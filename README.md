@@ -1,4 +1,4 @@
-# Deriving complete Control flow graphs (CFG) of processor modules:
+# Deriving complete Control flow graph (CFG) of processor modules:
 
 Here, we have to make a control flow graph for verilog code. Control flow graph is a relation between two operations
 in a program such that one operation will be executed after the other. The main goal is to make mapping of the state
