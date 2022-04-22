@@ -66,7 +66,6 @@ Steps to visualize the control flow graph:
     node[style=filled, color=cornflowerblue, fontcolor=white, fontsize=10, fontname="Helvetica"]
     edge[arrowhead=vee, arrowtail=inv, arrowsize=.7, color=maroon, fontsize=10,fontcolor=navy]
     //paste the output here obtained from runnning the c++ code.
-
 }
 6) To generate the .svg file of control flow graph, press Ctrl+Shift+V.
 
