@@ -13,7 +13,7 @@ To implement this, we have break this problem into control blocks as visualizati
 So firstly, we have analyzed many verilog codes and noted down the repeated blocks. We have found six repeated control
 blocks. After that, we have seperately find out control graph for each control block.  
 
-1. If, else if, else statement : There are 4 types of If, else if, else statements. The types and its control flow implemented in the code is explained below:
+1) If, else if, else statement : There are 4 types of If, else if, else statements. The types and its control flow implemented in the code is explained below:
 
   a) A single if statement: If the if condition is true, the control flow will enter the if statement block, else it will direct outside the if statement block. 
   
@@ -27,15 +27,15 @@ blocks. After that, we have seperately find out control graph for each control b
   If there are multiple else if statement blocks, then for each else if statement, if the condition is true, it will enter the block, else it will check the next else if statement.
   For the last else if statement, if the condition is true, it will enter the block, else it will enter the else statement block.
 
-2. switch case statement : For swith case statement, we compare the keyword with all the possible cases. If any of the case is satisfied, the control flow will enter the block of that particular case, else it will enter the default case block.
+2) switch case statement : For swith case statement, we compare the keyword with all the possible cases. If any of the case is satisfied, the control flow will enter the block of that particular case, else it will enter the default case block.
 
-3. for loop : The control flow of for loop goes from that line to the next line. Then the block inside the for loop runs and then the control flow again jumps back to the first line.
+3) for loop : The control flow of for loop goes from that line to the next line. Then the block inside the for loop runs and then the control flow again jumps back to the first line.
 
-4. while loop : The control flow of while loop goes from that line to the next line. Then the block inside the while loop runs and then the control flow again jumps back to the first line.
+4) while loop : The control flow of while loop goes from that line to the next line. Then the block inside the while loop runs and then the control flow again jumps back to the first line.
 
-5. repeat loop : The control flow of repeat loop goes from that line to the next line. Then the block inside the repeat loop runs and then the control flow again jumps back to the first line.
+5) repeat loop : The control flow of repeat loop goes from that line to the next line. Then the block inside the repeat loop runs and then the control flow again jumps back to the first line.
 
-6. forever loop : The control flow of forever loop goes from that line to the next line. Then the block inside the forever loop runs and then the control flow again jumps back to the first line.
+6) forever loop : The control flow of forever loop goes from that line to the next line. Then the block inside the forever loop runs and then the control flow again jumps back to the first line.
 
 
 
@@ -58,17 +58,17 @@ We are then using graphviz to visualize the graph.
 
 Steps to visualize the control flow graph:
 
-1. add a graphviz(dot) extension in vs code.
-2. run the given code(c++).
-3. Add a new file in vs code with name graph.dot.
-4. Then paste the below code in graph.dot file.
-5. digraph G{  
+1) add a graphviz(dot) extension in vs code.
+2) run the given code(c++).
+3) Add a new file in vs code with name graph.dot.
+4) Then paste the below code in graph.dot file.
+5) digraph G{  
     node[style=filled, color=cornflowerblue, fontcolor=white, fontsize=10, fontname="Helvetica"]
     edge[arrowhead=vee, arrowtail=inv, arrowsize=.7, color=maroon, fontsize=10,fontcolor=navy]
     //paste the output here obtained from runnning the c++ code.
 
 }
-6. To generate the .svg file of control flow graph, press Ctrl+Shift+V.
+6) To generate the .svg file of control flow graph, press Ctrl+Shift+V.
 
 The output of the 3 input files is given as .svg files of the control flow graph:
 1) Traffic_light_controller_CFG
